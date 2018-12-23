@@ -1,0 +1,109 @@
+.modal-container {
+  width: 60%;
+}
+
+.modal-content {
+    background-color: #ECECEC;
+    border-radius: 10px;
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.button {
+  border-radius: 0%;
+  background-color: #000;
+  color: #d2d2d2;
+  width: 13rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.margin-top{
+  margin-top:20px;
+}
+.margin-top-sub{
+  margin-top:5px;
+}
+.margin-top-cancel{
+  cursor: pointer;
+  margin-top: 14px;
+  margin-left: -20px;
+}
+
+input {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  height: 39px;
+}
+.overflow{
+  height:320px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../assets/img/sort.svg) no-repeat right #ddd;
+}
+
+.overflow::-webkit-scrollbar
+{ 
+  width: 8px;
+  height: 15px;
+  background-color: white;
+
+}
+.overflow::-webkit-scrollbar-thumb
+{
+  padding: 3px;
+  background-color: #B7B2B2;
+  border: 2px solid #CECCCC;
+}
+
+.link-blue, .link-blue:hover {
+  color: #0085bd;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 576px) {
+  .margin-top-cancel {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .order-info {
+    padding-bottom: 0;
+  }
+
+  .left-button {
+    float: right;
+  }
+
+  .right-button {
+    float: left;
+  }
+}

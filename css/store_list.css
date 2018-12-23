@@ -1,0 +1,303 @@
+/* fonts */
+@font-face{
+    font-family:'Brandon';
+    src:url('../assets/fonts/Brandon_bld.otf');
+}
+@font-face{
+    font-family:'Brandon_reg';
+    src:url('../assets/fonts/Brandon_reg.otf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    background-color: #F0F1EF;
+}
+
+.icon-panel {
+    background-color: #f3f3f3;
+    padding: 0;
+    height: 43px;
+    border: 1px solid #dcdcdc;
+}
+
+.icon {
+    padding-top: 10px;
+}
+
+.date {
+    float: right;
+    padding-top: 7px;
+}
+
+.date > h3 {
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-family:'Brandon';
+    margin-bottom: 0px;
+}
+
+.date > a {
+    color: #0085bd;
+    font-size: 0.8rem;
+    font-family:'Brandon_reg';
+}
+
+.date-arrow {
+    vertical-align: middle;
+}
+
+/* end for icon panel */
+
+.main-container {
+    width: 95%;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.content-area {
+    background-color: #fff;
+}
+
+.list-content {
+    margin-top: 5px;
+    padding-left: 0;
+    padding-right: 3px;
+}
+
+.order-guide {
+    background-color: #EAE9B1;
+    min-height: 40px;
+}
+
+.order-guide > h6 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    font-family:'Brandon_reg';
+}
+
+.order-guide > h6 > span {
+    color: #0085bd;
+}
+
+.header {
+    /*color: #000;*/
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family:'Brandon_reg';
+}
+
+.list-row {
+    padding-bottom: 15px;
+}
+
+.list-img, .list-name{
+    margin-top: 12px;
+    padding-left: 0;
+}
+
+.drag-down {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.quantity-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.quantity-btn span {
+    display: block;
+}
+
+.quantity-by {
+    width: 20px;
+    font-size: 0.7rem;
+    padding: 0 5px;
+    margin-top: 7px;
+}
+
+.increment-btn {
+    margin-top: 10px;
+}
+
+.quantity-by-top {
+    border-bottom: 1px solid #9B9B9B;
+}
+
+.label{
+    color: #999;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-family: 'Brandon';
+    font-weight: normal;
+}
+
+.dis {
+    font-family: 'Brandon';
+}
+
+.square {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #000;
+    text-align:center; 
+    color:#fff;
+    vertical-align: middle;
+   }
+
+.input-square {
+    height: 25px;
+    width: 25px;
+    background-color: #e4e4e4;
+    text-align:center;
+    border: none;
+    vertical-align: middle;
+}
+
+.selection-btn {
+    height: 105px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.btn-pagination {
+    position: absolute;
+    top: 30% !important;
+    text-align: center;
+}
+
+footer {
+    height: 60px;
+    text-align: right;
+}
+
+footer > img {
+    right: 30px;
+    display: inline-block;
+}
+
+footer span {
+    vertical-align: middle;
+    font-family: Brandon-med;
+    font-size: 0.9rem;
+    color: #7E7E7E;
+}
+
+/* media queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .icon, .date-icon{
+        padding-right: 0px;
+    }
+    
+    .order-guide > h6 {
+        text-align: center;
+        margin: 0px !important;
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+
+    .list-row {
+        border-bottom: 1px solid #000;
+    }
+    .icons > p {
+        display: none;
+    }
+
+    .materials{
+        position: absolute;
+        display: none; 
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .navbar {
+        padding-left: 18px;
+    }
+
+    .navbar > .navbar-toggler {
+        margin-left: 0px;
+    }
+
+    .list-img {
+        text-align: center;
+    }
+
+    .order-guide > h6 {
+        text-align: center;
+        margin: 0px !important;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    
+    .materials{
+        position: absolute;
+        left: 50%; 
+    }
+
+    .footer-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .navbar {
+        padding-left: 22px;
+    }
+
+    .navbar > .navbar-toggler {
+        margin-left: 0px;
+    }
+
+    .list-img {
+        text-align: center;
+    }
+
+    .top-icon, .logo-img {
+        float: left;
+    }
+
+    .footer-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) { 
+    .list-img {
+        text-align: center;
+    }
+
+    .quantity-btn {
+        padding-right: 0;
+    }
+    .main-container {
+        width: 90%;
+    }
+    .footer-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .drag-down {
+        margin-top: 72px;
+        text-align: center;
+    }
+
+}

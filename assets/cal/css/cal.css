@@ -1,0 +1,34 @@
+@font-face {
+   font-family: Brandon-reg;
+   src: url(../fonts/Brandon_reg.otf);
+}
+
+body{
+  font-family: Brandon-reg 
+}
+
+#ui-datepicker-div .ui-widget-header {  
+    /*background: #2D8CB9;*/    
+}
+
+a{
+    border:none;
+}
+.ui-state-default, .ui-widget-content .ui-state-default{
+  background: transparent!important;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 50%;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight{
+  background: #fff!important;
+  font-weight: bold;
+}
+.ui-datepicker-calendar th {
+    color: #2D8CB9;
+}
+
+.ui-state-default{
+  width:32px;
+  height:32px;
+}

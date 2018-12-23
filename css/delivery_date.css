@@ -1,0 +1,42 @@
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+#datepicker {
+  margin: 0 auto;
+}
+
+.button {
+  width: 13rem;
+}
+
+.left-button {
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-info {
+    padding-bottom: 0;
+  }
+
+  .left-button {
+    float: right;
+  }
+
+  .right-button {
+    float: left;
+  }
+}

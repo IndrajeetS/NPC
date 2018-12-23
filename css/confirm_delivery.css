@@ -1,0 +1,201 @@
+@font-face {
+   font-family: Brandon-reg;
+   src: url(../assets/fonts/Brandon_reg.otf);
+}
+
+.main-container {
+  font-family: Brandon-reg;
+}
+
+.order-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.order-info span {
+  display: block;
+  font-weight: bold;
+}
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+/*input::-webkit-datetime-edit{ color: transparent; }*/
+input:focus::-webkit-datetime-edit{ color: blue; }
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+select.form-control{
+	display: inline-block;
+	padding-bottom: 3px;
+  vertical-align: middle;
+}
+
+#time{
+	height: 34px;
+  width: 154px;
+}
+
+/* List*/
+.list-container {
+  padding: 10px 30px;
+}
+
+.list-heading {
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+.list-items {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.list-item-big-col, .list-item-col {
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.list-item-issues-col {
+  width: 100%;
+}
+
+.list-notes {
+  padding-left: 0;
+}
+
+.list-notes span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.list-notes input, .list-notes textarea {
+  width: 95%;
+  font-weight: bold;
+}
+
+.list-notes input {
+  height: 40px;
+}
+
+.badge-notify-blue{
+   background:blue;
+   position:relative;
+   color:white;
+   top: -10px;
+   left: -15px;
+   border-radius: 50%;
+}
+
+.badge-notify-black{
+   background:black;
+   position:relative;
+   color:white;
+   top: -10px;
+   left: -15px;
+   border-radius: 50%;
+}
+
+input, textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.issues {
+  width: 65%;
+}
+
+.total {
+  font-family: Brandon-light;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.button {
+  width: 10rem;
+  border-radius: 0%;
+  background-color: #000;
+  color: #fff;
+}
+
+.red-text {
+  color: red;
+}
+
+.black-text {
+  color: #000;
+}
+
+.blue-text {
+  color: blue;
+}
+
+@media only screen and (min-width: 576px) {
+  .list-notes input {
+    width: 85%;
+  }
+
+  .list-notes textarea {
+    width: 95%;
+  }
+
+  .issues {
+    width: 40%;
+  }  
+}
+
+@media only screen and (min-width: 768px) {
+  .list-item-big-col {
+    width: 50%;
+  }
+
+  .list-item-col {
+    width: 25%;
+  }
+
+  .list-notes input {
+    width: 80%;
+  }
+
+  .list-notes textarea {
+    width: 90%;
+  }
+
+  #time {
+    width: 100px;
+  }
+
+  .issues {
+    width: 38%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .list-item-big-col, .list-item-issues-col {
+    width: 20%;
+  }
+
+  .list-item-col {
+    width: 10%;
+  }
+
+  .issues {
+    width: 70%;
+  }
+}

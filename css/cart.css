@@ -1,0 +1,263 @@
+/* fonts */
+@font-face{
+    font-family:'Brandon';
+    src:url('../assets/fonts/Brandon_bld.otf');
+}
+@font-face{
+    font-family:'Brandon_reg';
+    src:url('../assets/fonts/Brandon_reg.otf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    background-color: #f1f1ef;
+}
+
+.row {
+    margin-top: 15px;
+}
+
+/* style for shopping cart */
+.cart-area {
+    background-color: #fff;
+}
+
+.heading-div > h3{
+    text-align: center;
+    margin-bottom: 0px;
+    font-family:'Brandon_reg';
+    
+}
+.heading-div > h6{
+    text-align: right;
+    margin-bottom: 0px;
+    color: #007ebd;
+    font-family:'Brandon_reg';
+}
+
+.title {
+    margin: 20px 5px 0px 0px;
+    text-align: center;
+}
+
+.title > h3{
+    font-size: 1.3rem;
+    font-family:'Brandon_reg';
+}
+
+.title > h5 {
+    font-size: 0.7rem;
+    margin-bottom: 3px;
+    color: #979797;
+    font-family:'Brandon';
+}
+
+.drag-down > h5 {
+    font-size: 0.7rem;
+    margin-bottom: 3px;
+    color: #979797;
+    font-family:'Brandon';
+}
+
+.drag-down{
+    margin: 52px 5px 0px 0px;
+    text-align: center;
+}
+
+.title > span {
+    font-size: 0.9rem;
+    text-align: center;
+    font-family:'Brandon';
+}
+
+.drag-down > span {
+    font-size: 0.9rem;
+    text-align: center;
+    font-family:'Brandon';
+}
+
+.right-input > input[type="text"]{
+    width: 100%;
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid #CCD2DA;
+    font-family:'Brandon_reg';
+}
+
+.right-input > input[type="text"]::placeholder{
+    padding-left: 8px;
+    color: #939393;
+}
+
+div.col-lg-3.drag-down {
+    text-align: right;
+    margin-right: 0px;
+    margin-left: 62px;
+}
+
+/* style for textarea */
+
+.text-area > textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #CCD2DA;
+}
+
+.text-area > h5{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1rem;
+    font-family:'Brandon_reg';    
+    font-weight: 600;
+}
+
+.text-area > a > span {
+    color: #007ebd;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family:'Brandon_reg';
+}
+
+.total-items {
+    font-size: 2.2rem;
+    text-align: right;
+    color: #8f8f8f;
+    margin-top: 30px;
+    font-family:'Brandon_reg';
+}
+
+.total-price {
+    font-size: 2.2rem;
+    color: #000;
+    margin-top: 30px;
+    font-family:'Brandon_reg';
+}
+
+.button-row{
+    margin-top: 5px;
+}
+
+/* style for square button */
+
+.square {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #000;
+    text-align:center; 
+    color:#fff;
+    vertical-align: middle;
+   }
+
+.input-square {
+    height: 25px;
+    width: 25px;
+    background-color: #e4e4e4;
+    text-align:center;
+    border: none;
+    vertical-align: middle;
+    font-family:'Brandon';
+}
+
+/* Button */
+.button {
+    width: 10rem;
+}
+
+/* media queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .icons {
+        padding-left: 0px;
+    }
+    .heading-div > h6 {
+    text-align: center;
+    }
+    .title{
+        margin: 20px 0px 0px 0px; 
+    }
+    .drag-down {
+        margin-top: 20px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    div.col-lg-3.drag-down {
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .img-fluid{
+        float: right;
+    }
+    .total-items {
+        font-size: 1.6rem;
+        text-align: right;
+    }
+    
+    .total-price {
+        font-size: 1.6rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .heading-div > h6 {
+    text-align: center;
+    }
+
+    .title{
+        margin: 20px 0px 0px 0px; 
+    }
+    .drag-down {
+        margin-top: 20px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    div.col-lg-3.drag-down {
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .img-fluid{
+        float: right;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .title{
+        margin: 20px 0px 0px 0px; 
+    }
+    .drag-down {
+        margin-top: 20px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    div.col-lg-3.drag-down {
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .img-fluid{
+        float: right;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .title, .drag-down, div.col-lg-3.drag-down {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .title {
+        text-align: left;
+    }
+}

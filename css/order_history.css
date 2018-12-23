@@ -1,0 +1,255 @@
+@font-face{
+	font-family:'Brandon-reg';
+	src:url('../assets/fonts/Brandon_reg.otf');
+}
+
+.sorting{
+	text-align:right;
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 10px;
+	border: 1px solid;
+	border-style: ridge;
+	border-color:white #ced4da #ced4da #ced4da;
+	padding:5px 5px;
+}
+
+.content{
+	background-color: #ffffff;
+}
+.header{
+	color:black;
+	padding:20px 0px;
+}
+
+.list-content {
+width: 100%;
+margin: 0 auto;
+padding-left: 3.5%;
+font-size: 0.8rem;
+}
+.dates{
+display: inline-block;
+width:23%;
+margin-bottom: 5%;
+padding:0;
+}
+.amounts{
+display:inline-block;
+width:20%;
+padding-left:25px;
+}
+
+.data{
+display:block;
+font-weight: bold;
+}
+
+.my-btn{
+	border-radius: 0px;
+	height:35px;
+	width:130px;
+	background:#000;
+	border:none;
+	color:#d2d2d2;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	padding: 0 10px;
+}
+
+.link-blue{
+	color:#0085bd;
+	cursor: pointer;
+}
+
+.link-blue:hover {
+	color:#0085bd;
+	text-decoration: none;
+}
+
+.clearAll {
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+.order-list{
+	padding-bottom: 5rem;
+}
+
+.order-invoice-no {
+	padding-top: 10px;
+	width: 100%;
+}
+
+.invoice-order {
+	text-align: right;
+	width: 100%;
+}
+
+.btn-container {
+	width: 100%;
+	padding-top: 10px;
+	text-align: right;
+	margin-top: 0;
+}
+
+.list-item{
+	padding: 0 10px;
+}
+
+.order-label {
+	font-family:'Brandon-reg';
+	font-size: 0.9rem;
+}
+
+.list-data {
+	padding: 0 10px;
+}
+
+.list-container{
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+.list-content {
+	width: 99%;
+	margin: 0 auto;
+}
+
+.line{
+	width:95%;
+	background:#000;
+	margin-top:10px;
+}
+.sorting select{
+	width: 170px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding:5px;
+    border: none;
+    background: transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 150px center;
+}
+/*styling for datepicker*/
+.search-container {
+  text-align: center;
+}
+
+.search-heading, .list-heading {
+  display: block;
+  text-align: center;
+}
+
+.search-input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  width: 80%;
+}
+
+.calender
+{
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+    width: 20px;
+    height: 20px;
+}
+
+.selection-btn {
+    height: 105px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.btn-pagination {
+    position: absolute;
+    top: 30% !important;
+    text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+	.sorting {
+		width: 90%;
+	}
+
+	.order-invoice-no {
+		padding-top: 10px;
+		width: 100%;
+	}
+
+	.invoice-order {
+		padding-top: 20px;
+		width: 31%;
+	}
+
+	.btn-container {
+		width: 69%;
+	}
+
+	.list-item-order {
+		display: inline;
+		padding: 0 10px;
+		width: 50%;
+	}
+
+	.dates{
+		display: inline-block;
+		width:24%;
+	}
+	.amount{
+		width:14%;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.order-invoice-no {
+		padding-top: 10px;
+		width: 70%;
+	}
+
+	.invoice-order {
+		padding-top: 10px;
+		width: 30%;
+	}
+
+	.btn-container {
+		width: 100%;
+	}
+	.dates{
+		width:30%;
+	}
+	.amount{
+		width:13%;
+	}
+}
+@media only screen and (min-width: 992px){
+	.sorting {
+		width: 85%;
+	}
+
+	.order-invoice-no {
+		padding-top: 20px;
+		width: 51%;
+	}
+
+	.invoice-order {
+		padding-top: 20px;
+		width: 19%;
+	}
+
+	.btn-container {
+		width: 30%;
+	}
+	.dates{
+		width:19%;
+	}
+	.amount{
+		width:14%;
+	}
+}

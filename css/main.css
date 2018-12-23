@@ -1,0 +1,248 @@
+@font-face{
+	font-family:'Brandon';
+	src:url('../assets/fonts/Brandon_bld.otf');
+}
+@font-face{
+	font-family:'Brandon-light';
+	src:url('../assets/fonts/Brandon_light.otf');
+}
+@font-face{
+	font-family:'Brandon-reg';
+	src:url('../assets/fonts/Brandon_reg.otf');
+}
+
+@font-face {
+   font-family: Brandon-med;
+   src: url(../assets/fonts/Brandon_med.otf);
+}
+
+/*fonts*/
+.heading {
+	font-family: Brandon-reg;
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.label {
+	font-family: Brandon-reg;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.content-text {
+	font-family: Brandon-reg;
+	font-size: 1rem;
+}
+
+.grey-text {
+	color: #909090;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+.blue-text {
+	color: #0085bd;
+}
+/*fonts End*/
+
+body {
+	background-color: #F0F1EF;
+}
+
+.nav-row {
+	margin: 20px 0;
+}
+
+.nav-container {
+	display: grid;
+	align-items: center;
+}
+
+.logo {
+	max-width: 120px;
+	object-fit: scale-down;
+	object-position: center;
+}
+
+.main-container {
+	width: 95%;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 10px 20px 40px 20px;
+	margin-bottom: 20px;
+}
+
+.footer-container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.redirect{
+	margin-top: -5px;
+}
+
+/**/
+.heading-container {
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+/**/
+
+/* Badge*/
+.badge-container {
+	position: relative;
+}
+
+.badge-yellow{
+	background:#FF9D00;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position:absolute;
+	color: #000;
+	top: 2px;
+	left: 26px;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+/**/
+/* footer */
+footer {
+    height: 60px;
+    text-align: right;
+}
+
+footer > img {
+    right: 30px;
+    display: inline-block;
+}
+
+footer span {
+	vertical-align: middle;
+	font-family: Brandon-med;
+	font-size: 0.9rem;
+	color: #7E7E7E;
+}
+/* End of footer */
+
+/* Navbar */
+.navbar {
+	padding-left: 0;
+	font-family: 'Brandon-reg';
+	font-size: 1rem;
+}
+
+.navbar a:hover {
+	font-weight: bold;
+}
+
+.navbar-toggler, .navbar-collapse {
+	margin-left: 2.5%;
+}
+
+#navbarNav a {
+ color: #393939;
+ text-transform: uppercase;
+ text-decoration: none;
+ display: inline-block;
+ padding: 0;
+ margin: 0 20px;
+ position: relative;
+}
+#navbarNav a:after {
+ background: none repeat scroll 0 0 transparent;
+ bottom: 0;
+ content: "";
+ display: block;
+ height: 2px;
+ left: 50%;
+ position: absolute;
+ background: #d30000;
+ transition: width 0.3s ease 0s, left 0.3s ease 0s;
+ width: 0;
+}
+
+#navbarNav a:hover:after {
+ width: 100%;
+ left: 0;
+}
+
+ul.navbar-nav.nav-define li a.on
+{    
+    border-bottom: 2px solid red;
+    line-height: 1.2;
+    font-weight: bold;
+}
+/* End of Navbar */
+
+/* Button */
+.btn-container {
+	margin-top: 32px;
+  	text-align: center;
+}
+
+.button {
+	border-radius: 0%;
+	background-color: #000;
+	color: #d2d2d2;
+	text-transform: uppercase;
+}
+/* End of Button */
+
+/* Modal */
+.modal-content {
+    background-color: #ECECEC;
+    border-radius: 10px;
+}
+/* End of Modal */
+
+/* paginatio */
+#select {
+	background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* End of Pagination */
+
+@media only screen and (max-width: 576px) {
+	.nav-container {
+		padding-right: 0;
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	.navbar-toggler, .navbar-collapse {
+		margin-left: 5%;
+	}
+
+	.logo {
+		justify-self: end;
+	}
+
+	.main-container, .footer-container {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.navbar {
+		margin-bottom: 25px;
+	}
+	.nav-define{
+		width: fit-content;
+		margin:0 auto;
+	}
+
+	.main-container, .footer-container {
+		width: 85%;
+	}
+}

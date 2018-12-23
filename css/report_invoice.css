@@ -1,0 +1,91 @@
+.search-container {
+  text-align: center;
+}
+
+.search-heading, .list-heading {
+  display: block;
+  text-align: center;
+}
+
+.search-input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  width: 80%;
+}
+
+.calender
+{
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+    width: 20px;
+    height: 20px;
+}
+
+.list-heading-container {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+/* CheckBox*/
+.checkbox-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  min-width: 50%;
+}
+/*Checkbox end*/
+.button {
+  width: 10rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .checkbox-form {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .custom-checkbox {
+    min-width: 49%;
+  }
+
+  .search-input {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search-input {
+    width: 90%;
+  }
+
+  .checkbox-form {
+    width: 97%;
+  }
+
+  .custom-checkbox {
+    min-width: 19%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .search-input {
+    width: 70%;
+  }
+
+  .checkbox-form {
+    width: 90%;
+  }
+
+  .custom-checkbox {
+    min-width: 13%;
+  }
+}
